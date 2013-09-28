@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>doomer</name>
+    <description lang="en">DOOMer's repo, experimental overlay for Gentoo</description>
+    <homepage>https://github.com/DOOMer/doomer-overlay.git</homepage>
+    <owner type="person">
+      <email>doomer3d@gmail.com</email>
+      <name>Artem Galichkin</name>
+    </owner>
+    <source type="git">https://github.com/DOOMer/doomer-overlay.git</source>
+  </repo>
+</repositories>
