@@ -6,11 +6,11 @@ EAPI="3"
 
 inherit cdrom games
 
-MY_PATCHVER="1.0.0.15"
+MY_PATCHVER="1.0.1"
 
 DESCRIPTION="Hexen 2 game data files"
 HOMEPAGE="http://www.ravensoft.com/gamesdetail.aspx?xmmid=624&xmid=13&xmview=2"
-SRC_URI="uhexen2? ( mirror://sourceforge/uhexen2/h2patch3-${MY_PATCHVER}.tgz )"
+SRC_URI="uhexen2? ( mirror://sourceforge/uhexen2/h2patch3-${MY_PATCHVER}.tar.gz )"
 
 LICENSE="as-is"
 SLOT="0"
