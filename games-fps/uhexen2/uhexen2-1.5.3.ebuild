@@ -7,7 +7,7 @@ EAPI="3"
 inherit eutils flag-o-matic toolchain-funcs versionator games
 
 MY_PV=$(replace_version_separator 3 '-')
-DATA_PV="1.25"
+DATA_PV="1.28"
 HW_PV="0.15"
 MY_PN="hexen2"
 DEMO_PV="1.11"
