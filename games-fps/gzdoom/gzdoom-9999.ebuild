@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit games cmake-utils subversion eutils
+inherit games cmake-utils git eutils
 
 DESCRIPTION="Enhanced OpenGL port of the official DOOM source code that also supports Heretic, Hexen, and Strife"
 HOMEPAGE="http://www.osnanet.de/c.oelckers/gzdoom/index.html"
