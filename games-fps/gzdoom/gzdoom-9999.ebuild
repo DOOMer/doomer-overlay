@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit games cmake-utils git eutils
+inherit games cmake-utils git-2 eutils
 
 DESCRIPTION="Enhanced OpenGL port of the official DOOM source code that also supports Heretic, Hexen, and Strife"
 HOMEPAGE="http://www.osnanet.de/c.oelckers/gzdoom/index.html"
@@ -33,7 +33,7 @@ src_prepare() {
 	sed -i \
 		-e "s:/usr/local/share/:${GAMES_DATADIR}/doom-data/:" \
 		src/sdl/i_system.h || die
-	epatch "${FILESDIR}/${PN}-respect-fluidsynth-useflag.patch"
+#	epatch "${FILESDIR}/${PN}-respect-fluidsynth-useflag.patch"
 #	epatch "${FILESDIR}/${P}-fix-new-fmod.patch"
 }
 
@@ -42,8 +42,8 @@ src_configure() {
 		$(cmake-utils_use_no mmx ASM)
 		$(cmake-utils_use_no gtk GTK)
 		$(cmake-utils_use_use fluidsynth FLUIDSYNTH)
-		-DFMOD_INCLUDE_DIR=/opt/fmodex/api/inc/
-		-DFMOD_LIBRARY=/opt/fmodex/api/lib/libfmodex.so
+		-DFMOD_INCLUDE_DIR=/usr/include/fmodex/
+		-DFMOD_LIBRARY=/opt/fmodex/api/lib/libfmodex64.so 
 	)
 
 	cmake-utils_src_configure
