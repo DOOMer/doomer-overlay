@@ -8,7 +8,7 @@ inherit games cmake-utils git-2 eutils
 
 DESCRIPTION="Enhanced OpenGL port of the official DOOM source code that also supports Heretic, Hexen, and Strife"
 HOMEPAGE="http://www.osnanet.de/c.oelckers/gzdoom/index.html"
-EGIT_REPO_URI="https://github.com/coelckers/gzdoom.git"
+EGIT_REPO_URI="git://github.com/coelckers/gzdoom.git"
 
 LICENSE="DOOMLIC BUILDLIC BSD"
 SLOT="0"
