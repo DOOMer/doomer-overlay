@@ -4,11 +4,10 @@
 
 EAPI="4"
 inherit eutils
-#PVERSION=${PV}
-PVERSION="6.0.2"
+PVERSION="131.515"
 DESCRIPTION="WebStorm"
 HOMEPAGE="www.jetbrains.com/pycharm/"
-SRC_URI="http://download.jetbrains.com/webstorm/WebStorm-${PVERSION}.tar.gz"
+SRC_URI="http://download.jetbrains.com/webstorm/WebStorm-${PV}.tar.gz"
 KEYWORDS="~x86 ~amd64"
 DEPEND=">=virtual/jre-1.6"
 RDEPEND="${DEPEND}"
@@ -19,7 +18,7 @@ src_install() {
 	dodir /opt/${PN}
 		
 	insinto /opt/${PN}
-	cd WebStorm-${PV}
+	cd WebStorm-${PVERSION}
 	doins -r *
 	fperms a+x /opt/${PN}/bin/webstorm.sh || die "fperms failed"
 	fperms a+x /opt/${PN}/bin/fsnotifier || die "fperms failed"
